@@ -38,4 +38,5 @@ accepts arguments as query params. Also accepts "file" PDF file as form-data.
 
 email: cavid.aydin3@gmail.com
 phone: +994517792726
-enigma-azercellhackathon.herokuapp.com
+
+https://enigma-azercellhackathon.herokuapp.com/
