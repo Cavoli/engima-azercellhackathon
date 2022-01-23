@@ -35,11 +35,16 @@ public class SummarizationController {
 
     @PostMapping(value = "/external/file", consumes = {"multipart/form-data"})
     public ResponseEntity<String> summariseTextFromFile(@RequestParam("file") MultipartFile multipartFile,
-                                                        @RequestParam("limit")LimitFormat limit,
+                                                        @RequestParam("limit") LimitFormat limit,
                                                         @RequestParam("size") Integer size
-                                                        ) throws IOException {
+    ) throws IOException {
         String result = service.externalSummarizationOfFile(multipartFile, limit, size);
         return ResponseEntity.ok().body(result);
+    }
+
+    @PostMapping("/char-count")
+    public int countChars(@RequestBody String text) {
+        return text.toCharArray().length;
     }
 
 }
