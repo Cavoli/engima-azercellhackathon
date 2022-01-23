@@ -1,4 +1,4 @@
-package com.example.demo.security;
+package com.example.demo.config;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
