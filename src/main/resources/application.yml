@@ -1,0 +1,50 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    properties:
+      hibernate.jdbc.time_zone: UTC
+      hibernate.id.new_generator_mappings: true
+      hibernate.connection.provider_disables_autocommit: true
+      hibernate.cache.use_second_level_cache: false
+      hibernate.cache.use_query_cache: false
+      hibernate.generate_statistics: false
+      hibernate.jdbc.batch_size: 25
+      hibernate.order_inserts: true
+      hibernate.order_updates: true
+      hibernate.query.fail_on_pagination_over_collection_fetch: true
+      hibernate.query.in_clause_parameter_padding: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://ec2-3-225-41-234.compute-1.amazonaws.com/d9c25qt1prbs79
+    username: ycxuqcvxzxlqar
+    password: 8d441013b6a64460cf55216853ad69320166e0a76d1d794beeadecd7425db13e
+    hikari:
+      poolName: Hikari
+      auto-commit: false
+
+
+
+server:
+  port: 8481
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+
+#    /swagger-ui/index.html
+
+
+
+#security:
+#  authentication:
+#    jwt:
+#      base64-secret: MDUzOWVmMzRjYjY3ZWUwNjk5ZWUyNmMxNTRiNTJmMWU4MjRhMjA1MjhmM2EwMTk3YmM4NDYyOGUzN2U3M2Y3NjkxNGU0YzY1ZTcxMWRiNGU5OGE3ZDcxMjgyYWNlNDYyMWVkNTIzYThkNDI1OTQzNGFmY2U3NDU2MGM3MjBjZWE=
+#      token-validity-in-seconds: 86400
+#      token-validity-in-seconds-for-remember-me: 2592000
