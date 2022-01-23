@@ -38,13 +38,3 @@ springdoc:
     path: /swagger-ui.html
     operationsSorter: method
 
-#    /swagger-ui/index.html
-
-
-
-#security:
-#  authentication:
-#    jwt:
-#      base64-secret: MDUzOWVmMzRjYjY3ZWUwNjk5ZWUyNmMxNTRiNTJmMWU4MjRhMjA1MjhmM2EwMTk3YmM4NDYyOGUzN2U3M2Y3NjkxNGU0YzY1ZTcxMWRiNGU5OGE3ZDcxMjgyYWNlNDYyMWVkNTIzYThkNDI1OTQzNGFmY2U3NDU2MGM3MjBjZWE=
-#      token-validity-in-seconds: 86400
-#      token-validity-in-seconds-for-remember-me: 2592000
